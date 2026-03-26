@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INVENCIBLE HUB</title>
+</head>
+
+<body style="background:black; color:white; text-align:center; font-family:sans-serif;">
+
+    <h1>INVENCIBLE HUB</h1>
+    <p>Clique abaixo para gerar sua key</p>
+
+    <button onclick="gerarKey()" style="padding:10px; font-size:18px;">
+        GERAR KEY
+    </button>
+
+    <h2 id="key"></h2>
+
+    <script>
+        function gerarKey(){
+            let keys = ["FREE-ABC123", "FREE-XYZ789"];
+            let random = keys[Math.floor(Math.random()*keys.length)];
+            document.getElementById("key").innerText = random;
+        }
+    </script>
+
+</body>
+</html>
